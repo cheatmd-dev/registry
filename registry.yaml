@@ -1,0 +1,25 @@
+# CheatMD cheat-pack registry
+#
+# This file lists installable cheat packs. The cheatmd CLI fetches it during
+# first-run setup (and via the registry_url config key) so users can pick a
+# starter pack of cheats to install.
+#
+# Schema:
+#   version        integer, currently 1
+#   packs[]        list of installable packs
+#     name         short id; also the install subdirectory under the cheats dir
+#     repo         clonable repository URL, e.g. https://github.com/owner/repo
+#     description  one-line summary shown in the picker
+#     official     true -> if maintained by cheatmd
+#
+# How packs are installed: the CLI shallow-clones `repo` (git clone --depth 1),
+# falling back to downloading the GitHub tarball when git is unavailable. Only
+# Markdown (.md) files are copied into <cheats-dir>/<name>/.
+
+version: 1
+
+packs:
+  - name: BotnetBuddies-Pentesting
+    repo: https://github.com/botnetbuddies/cheats
+    description: Offensive Security / Red Team
+    official: false
