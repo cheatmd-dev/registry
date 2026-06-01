@@ -31,7 +31,7 @@ packs:
     repo: https://github.com/cheatmd-dev/cheatmd-pack-git
     description: Git Version Control
     official: true
-  - name: BotnetBuddies-Pentesting
+  - name: Pentesting
     repo: https://github.com/botnetbuddies/cheats
-    description: Offensive Security / Red Team
+    description: Offensive Security by Botnet Buddies
     official: false
