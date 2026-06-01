@@ -19,6 +19,18 @@
 version: 1
 
 packs:
+  - name: Linux
+    repo: https://github.com/cheatmd-dev/cheatmd-pack-linux
+    description: Linux System Administration
+    official: true
+  - name: Docker
+    repo: https://github.com/cheatmd-dev/cheatmd-pack-docker
+    description: Docker Container Management
+    official: true
+  - name: Git
+    repo: https://github.com/cheatmd-dev/cheatmd-pack-git
+    description: Git Version Control
+    official: true
   - name: BotnetBuddies-Pentesting
     repo: https://github.com/botnetbuddies/cheats
     description: Offensive Security / Red Team
